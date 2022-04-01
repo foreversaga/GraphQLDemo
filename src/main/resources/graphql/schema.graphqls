@@ -1,0 +1,15 @@
+type Query {
+    getBooks(match: String): [Book]
+}
+
+type Book {
+    id: ID
+    title: String
+    author: Author
+}
+
+type Author {
+    id: ID
+    name: String
+    age: Int
+}
